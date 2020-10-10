@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@font-face {
+  font-family: Plexina;
+  src: url(./plexina.woff2);
+}
+
+@font-face {
+  font-family: Plexina-Bold;
+  src: url(./plexina-bold.woff2);
+  font-weight: bold;
+}

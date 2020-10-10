@@ -23,7 +23,7 @@ export const BlogBox = styled.a`
   width: 350px;
   height: 350px;
   border-radius: 2px;
-  margin: 0 1rem;
+  margin: 1rem;
   position: relative;
 
   ${props => props.background && css`
@@ -43,15 +43,25 @@ export const BlogBox = styled.a`
       z-index: 0;
     }
   `}
+
+  @media screen and (max-width: 1030px) {
+    width: 100%;
+  }
   
 `;
 
 export const BoxContainer = styled.div`
-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 1030px) {
+    flex-direction: column;
+    align-items: flex-start;
+    // padding: 50px;
+  }
 `;
 
 export const Date = styled.p`

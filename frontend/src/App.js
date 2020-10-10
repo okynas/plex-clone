@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import { IsUserRedirect, ProtectedRoute } from './helpers/routes';
 import Home from "./pages/home"
 
+import "./style/app.css"
+
 function App() {
 
   // const user = {username: "stian"}
