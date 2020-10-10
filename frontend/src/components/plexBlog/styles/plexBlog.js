@@ -19,16 +19,30 @@ export const Title = styled.h2`
   color: #282a2d;
 `;
 export const BlogBox = styled.a`
-  position: relative;
   text-decoration: none;
   width: 350px;
   height: 350px;
   border-radius: 2px;
+  margin: 0 1rem;
   ${props => props.background && css`
     background-image: url(${props.background});
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
+    position: relative;
+
+    // filter: opacity(10%);
+
+    &::before {
+      content: "helo";
+      position: absolute;
+      background-color: rgba(40,42,45,.7);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 0;
+    }
   `}
   
 `;
@@ -41,7 +55,7 @@ export const BoxContainer = styled.div`
 `;
 
 export const Date = styled.div`
-  position: absolute;
+  // position: absolute;
   color: rgba(255,255,255,.7);
   z-index: 2;
   left: 50px;
@@ -49,7 +63,7 @@ export const Date = styled.div`
 `;
 
 export const Subtitle = styled.h3`
-  position: absolute;
+  // position: absolute;
   color: #fff;
   z-index: 2;
   bottom: 40px;
@@ -59,17 +73,11 @@ export const Subtitle = styled.h3`
 `;
 
 export const Overlay = styled.div`
-  position: absolute;
-  background-color: rgba(40,42,45,.7);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
+  position: relative;
 `;
 
 export const Button = styled.button`
-  position: absolute;
+  // position: absolute;
   z-index: 2;
   display: none;
 `;
