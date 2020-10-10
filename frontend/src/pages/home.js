@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {WhyPlex, JumbotronContainer, CompanyContainer} from "../containers"
+import {WhyPlex, JumbotronContainer, CompanyContainer, BlogContainer} from "../containers"
 
 // import { Feature, OptForm } from '../components';
 // import { HeaderContainer } from '../containers/header';
@@ -17,6 +17,7 @@ export default function Home() {
       <JumbotronContainer />
       <WhyPlex/>
       <CompanyContainer/>
+      <BlogContainer/>
     </>
   );
 }

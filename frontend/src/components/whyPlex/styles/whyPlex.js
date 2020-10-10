@@ -59,7 +59,7 @@ export const Container = styled.div`
   padding: 80px 180px 50px;
 
   @media screen and (max-width: 1440px) {
-    padding: 60px 80px;
+    padding: 60px 80px 0;
   }
 
 `;
