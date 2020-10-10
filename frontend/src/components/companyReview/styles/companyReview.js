@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: block;
   text-align: center;
   font-family: plexeina-regular,Helvetica,sans-serif;
+  // width: 100vw;
 `;
 
 export const Section = styled.div`
@@ -16,6 +17,7 @@ export const Section = styled.div`
 
 export const PremiumReview = styled.div`
   width: 100%;
+  position: relative;
   // height: 100px;
   background-color: #E5A00D;
   display: flex;
@@ -24,6 +26,12 @@ export const PremiumReview = styled.div`
   align-items: center;
   color: #fff;
   padding: 3rem 0;
+
+  @media screen and (max-width: 1030px) {
+    flex-direction: column;
+    align-items: flex-start;
+    // padding: 50px;
+  }
 `;
 
 export const SectionLogo = styled.img`
@@ -58,6 +66,19 @@ export const Column = styled.div`
   justify-content: space;
   margin: 0;
   padding: 0;
+
+  @media screen and (max-width: 1030px) {
+    width: 80%;
+    margin: 20px auto;
+    padding: 50px;
+  }
+
+  &:not(:nth-of-type(4)) {
+    @media screen and (max-width: 1030px) {
+      background-color: #E8AA26;
+    }
+  }
+  
 `;
 
 export const Title = styled.h2`
@@ -100,10 +121,8 @@ export const Button = styled.button`
   margin-top: 30px;
   border-radius: 1000px;
   padding: 15px 36px 17px;
-  // color: #fff;
   display: inline-block;
   font-smoothing: antialiased;
-  // background: #e5a00d;
   outline: 0;
   border: 0;
   opacity: 1;
@@ -112,4 +131,5 @@ export const Button = styled.button`
   -ms-transition: all .3s ease;
   transition: all .3s ease;
   cursor: pointer;
+  width: 200px;
 `;

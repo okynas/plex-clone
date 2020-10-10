@@ -13,8 +13,8 @@ PlexBlog.Container = function PlexBlogContainer({children}) {
   return <Container>{children}</Container>;
 }
 
-PlexBlog.Overlay = function PlexBlogOverlay({}) {
-  return <Overlay/>;
+PlexBlog.Overlay = function PlexBlogOverlay({children}) {
+  return <Overlay>{children}</Overlay>;
 }
 
 PlexBlog.Title = function PlexBlogTitle({title}) {
