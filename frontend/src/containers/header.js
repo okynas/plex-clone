@@ -1,106 +1,85 @@
 import React from "react";
 import Header from "../components/header";
+import { FaAngleDown, FaBars, FaTv } from 'react-icons/fa';
 
 export default function JumbotronContainer () {
   return(
     <Header.Container>
+      <Header.Overlay>
+        <Header.TopSection>
 
-      {/* TOP */}
+          <Header.NavBar>
 
-        {/* navbar */}
-          {/* left */}
-            {/* icon */}
-          {/* left */}
+            <Header.Menu>
+              <FaBars/>
+            </Header.Menu>
 
-          {/* middle */}
-            {/* dropdown */}
-            {/* dropdown */}
+            <Header.NavBarLeft>
+              <Header.NavBarIcon src="https://www.plex.tv/wp-content/themes/plex/assets/img/plex-logo.svg"/>
+            </Header.NavBarLeft>
 
-            {/* dropdown */}
-            {/* dropdown */}
+            <Header.NavBarMiddle>
+              <Header.Dropdown>
+                <Header.DropdownTitle text="Live TV" icon={<FaAngleDown/>}/>
+              </Header.Dropdown>
+              <Header.Dropdown>
+                <Header.DropdownTitle text="On Demand" icon={<FaAngleDown/>}/>
+              </Header.Dropdown>
+              <Header.Dropdown>
+                <Header.DropdownTitle text="Your Media" icon={<FaAngleDown/>}/>
+              </Header.Dropdown>
+              <Header.Dropdown>
+                <Header.DropdownTitle text="Community" icon={<FaAngleDown/>}/>
+              </Header.Dropdown>
+              <Header.Dropdown>
+                <Header.DropdownTitle text="Premium" icon={<FaAngleDown/>}/>
+              </Header.Dropdown>
+            </Header.NavBarMiddle>
 
-            {/* dropdown */}
-            {/* dropdown */}
+            <Header.NavBarRight>
+              <Header.RightTitle text="My Account"/>
+              <Header.RightButton text="Launch"/>
+            </Header.NavBarRight>
+          </Header.NavBar>
 
-            {/* dropdown */}
-            {/* dropdown */}
+          <Header.Hero>
+            <Header.HeroText text="Stream Free Live TV on Plex" />
+            <Header.HeroButton text="Tune In" />
+          </Header.Hero>
 
-            {/* dropdown */}
-            {/* dropdown */}
-          {/* middle */}
+        </Header.TopSection>
 
-          {/* right */}
-            {/* title */}
-            {/* title */}
+        <Header.BottomSection>
+        <Header.BottomBox>
+          <Header.BottomBoxIcon icon={<FaTv/>}/>
+          <Header.BottomBoxTitle title="Live TV"/>
+          <Header.BottomBoxText text="Stream 80+ channels free. Upgrade to the ultimate TV experience to watch and record local shows, news and sports."/>
+          <Header.BottomBoxButton text="Watch Now"/>
+        </Header.BottomBox>
+        
+        <Header.BottomBox>
+          <Header.BottomBoxIcon icon={<FaTv/>}/>
+          <Header.BottomBoxTitle title="Live TV"/>
+          <Header.BottomBoxText text="Stream 80+ channels free. Upgrade to the ultimate TV experience to watch and record local shows, news and sports."/>
+          <Header.BottomBoxButton text="Watch Now"/>
+        </Header.BottomBox>
 
-            {/* button */}
-            {/* button */}
-          {/* right */}
-        {/* navbar */}
+        <Header.BottomBox>
+          <Header.BottomBoxIcon icon={<FaTv/>}/>
+          <Header.BottomBoxTitle title="Live TV"/>
+          <Header.BottomBoxText text="Stream 80+ channels free. Upgrade to the ultimate TV experience to watch and record local shows, news and sports."/>
+          <Header.BottomBoxButton text="Watch Now"/>
+        </Header.BottomBox>
 
-        {/* hero */}
-          {/* text */}
-          {/* text */}
-
-          {/* button */}
-          {/* button */}
-        {/* hero */}
-
-      {/* TOP */}
-
-      {/* Bottom */}
-        {/* Box */}
-          {/* icon */}
-
-          {/* title */}
-          {/* title */}
-
-          {/* text */}
-          {/* text */}
-
-          {/* button */}
-          {/* button */}
-        {/* Box */}
-
-        {/* Box */}
-          {/* icon */}
-
-          {/* title */}
-          {/* title */}
-
-          {/* text */}
-          {/* text */}
-
-          {/* button */}
-          {/* button */}
-        {/* Box */}
-
-        {/* Box */}
-          {/* icon */}
-
-          {/* title */}
-          {/* title */}
-
-          {/* text */}
-          {/* text */}
-
-          {/* button */}
-          {/* button */}
-        {/* Box */}
-
-        {/* Box */}
-          {/* icon */}
-
-          {/* title */}
-          {/* title */}
-
-          {/* text */}
-          {/* text */}
-
-          {/* button */}
-          {/* button */}
-        {/* Box */}
-      {/* Bottom */}
+        <Header.BottomBox>
+          <Header.BottomBoxIcon icon={<FaTv/>}/>
+          <Header.BottomBoxTitle title="Live TV"/>
+          <Header.BottomBoxText text="Stream 80+ channels free. Upgrade to the ultimate TV experience to watch and record local shows, news and sports."/>
+          <Header.BottomBoxButton text="Watch Now"/>
+        </Header.BottomBox>
+        
+      </Header.BottomSection>
+      </Header.Overlay>
     </Header.Container>
   )
 }

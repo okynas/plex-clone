@@ -80,21 +80,17 @@ export const Subtitle = styled.h3`
 
 export const Overlay = styled.div`
   position: relative;
-  // margin: 14rem 3rem 0 3rem; 
   height: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: flex-end;
-  // text-align: center;
   width: 80%;
   margin: 4rem auto 0 auto;
   transition: all .6s;
   transition-timing-function: cubic-bezier(1,.8,.5,1);
 
   &:hover Button {
-    // display: block;
     transform: rotate(0deg);
     opacity: 1;
   }

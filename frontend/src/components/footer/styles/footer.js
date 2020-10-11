@@ -21,12 +21,21 @@ export const LeftWrapper = styled.div`
   width: 25%;
   display: flex;
 
+  @media screen and (max-width: 1300px) {
+    width: 20%;
+  }
+
+  @media screen and (max-width: 1150px) {
+   margin: 2rem 0 0 4rem;
+  }
+
   @media screen and (max-width: 1030px) {
     flex-direction: column;
     margin: 2rem 0 0 0;
     align-items: center;
     justify-content: center;
   }
+  
 `;
 export const RightWrapper = styled.div`
   margin: 5rem;
@@ -65,6 +74,13 @@ export const Logo = styled.img`
 
   @media screen and (max-width: 1030px) {
     margin: 0;
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin: 2rem 0 0 0;
+  }
+  @media screen and (max-width: 1150px) {
+    // margin: 0;
   }
 `;
 
