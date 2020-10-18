@@ -1,12 +1,11 @@
 import React from 'react';
+import {BrowseContainer} from "../containers"
 
 export default function Browse() {
 
   return (
     <>
-      {/* navbar */}
-      {/* sidebar */}
-      {/* content */}
+      <BrowseContainer />
     </>
   );
 }

@@ -27,6 +27,9 @@ function App() {
         <ProtectedRoute user={user} path="/watch">
           <Watch/>
         </ProtectedRoute>
+        <ProtectedRoute user={user} path="/movie">
+          <Movie/>
+        </ProtectedRoute>
       </Switch>
     </Router>
   );

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Login from "../components/login";
 import { FaApple, FaGoogle, FaFacebook } from 'react-icons/fa';
 
 import '../styles/login.css';

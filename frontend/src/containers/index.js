@@ -6,5 +6,6 @@ import FooterContainer from '../containers/footer';
 import HeaderContainer from '../containers/header';
 import BrowseHeaderContainer from '../containers/header';
 import LoginContainer from '../containers/login';
+import BrowseContainer from "../containers/browse"
 
-export {WhyPlex, JumbotronContainer, CompanyContainer, BlogContainer, FooterContainer, HeaderContainer, BrowseHeaderContainer, LoginContainer}
+export {WhyPlex, JumbotronContainer, CompanyContainer, BlogContainer, FooterContainer, HeaderContainer, BrowseHeaderContainer, LoginContainer, BrowseContainer}
