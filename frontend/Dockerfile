@@ -2,10 +2,10 @@
 FROM node:latest
 
 # set working directory
-WORKDIR /app
+WORKDIR /front
 
 # add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
+ENV PATH /front/node_modules/.bin:$PATH
 
 # install app dependencies
 COPY package.json ./

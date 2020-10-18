@@ -44,7 +44,7 @@ Header.Dropdown = function HeaderDropdown({text, children}) {
 }
 
 Header.Menu = function HeaderMenu({children}) {
-  return <Menu onClick={() => console.log("work")}>{children}</Menu>;
+  return <Menu>{children}</Menu>;
 }
 
 Header.DropdownTitle = function HeaderDropdownTitle({text, icon}) {
@@ -61,11 +61,11 @@ Header.NavBarRight = function HeaderNavBarRight({children}) {
 }
 
 Header.RightTitle = function HeaderRightTitle({text}) {
-  return <RightTitle href={text}>{text}</RightTitle>;
+  return <RightTitle href={`#${text}`}>{text}</RightTitle>;
 }
 
 Header.RightButton = function HeaderRightButton({text}) {
-  return <RightButton href="/launch">{text}</RightButton>;
+  return <RightButton href="/browse">{text}</RightButton>;
 }
 
 // HERO
