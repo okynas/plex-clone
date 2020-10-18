@@ -3,24 +3,16 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import Home from "./pages/home"
 import Browse from "./pages/browse"
 import Login from "./pages/login"
+import Watch from "./pages/watch"
 
 import "./style/app.css"
-
-// function ProtectedRoute({ user, children, path}) {
-//   return <Route path={path} render={() => user ? children: <Redirect to="/login"/> } />
-// }
-
-// function IsSignedIn({user, children, path}) {
-//   return <Route path={path} render={() =>  user ? <Redirect to="/browse"/> : children } />
-// }
 
 const ProtectedRoute = ({ user, children, path}) => <Route path={path} render={() => user ? children: <Redirect to="/login"/> } />
 const IsSignedIn = ({user, children, path}) =>  <Route path={path} render={() =>  user ? <Redirect to="/browse"/> : children } />;
 
 function App() {
 
-  const user = null;
-  // const user = {username: "stian"};
+  const user = localStorage.getItem('user');
 
   return (
     <Router>
@@ -32,6 +24,9 @@ function App() {
         <IsSignedIn user={user} path="/login">
           <Login/>
         </IsSignedIn>
+        <ProtectedRoute user={user} path="/watch">
+          <Watch/>
+        </ProtectedRoute>
       </Switch>
     </Router>
   );

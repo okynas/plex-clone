@@ -9,18 +9,32 @@ export default class LoginContainer extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {value : ""}
+    this.state = {
+      email : "",
+      password: "",
+    }
 
     this.handleSubmit = this.handleSubmit.bind(this);
-    // this.handleChange = this.handleChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleChangePwd = this.handleChangePwd.bind(this);
   }
 
-  componentDidMount() {
+  // componentDidMount() {
 
-  }
+  // }
 
   handleSubmit(event) {
 
+    localStorage.setItem('user', JSON.stringify({email: this.state.email, password: this.state.password}))
+    window.location.href('/browse')
+  }
+
+  handleChange(event) {
+    this.setState({email: event.target.value});
+  }
+
+  handleChangePwd(event) {
+    this.setState({password: event.target.value});
   }
 
   render() {
@@ -37,54 +51,55 @@ export default class LoginContainer extends Component {
               <FaGoogle/>
               Continue with Google
             </a>
+
+            <a className="button bg-blue">
+              <FaFacebook/>
+              Continue with Facebook
+            </a>
+
+            <a className="button bg-black">
+              <FaApple/>
+              Continue with Apple
+            </a>
           </section>
+
+          <span className="splitter">
+            <span className="splitterLeft"></span>
+            <span>or</span>
+            <span className="splitterRight"></span>
+          </span>
+
+          <form onSubmit={this.handleSubmit}>
+            <label>
+              <span className="subtitle">Email or Username</span>
+              <input type="text" placeholder="your-email@gmail.com" value={this.state.email} onChange={this.handleChange}/>
+            </label>
+
+            <label>
+              <span className="subtitle">Password</span>
+              <input type="password" placeholder="password" value={this.state.password} onChange={this.handleChangePwd}/>
+            </label>
+
+            <input type="submit" value="Sign In" className="submit"/>
+          </form>
+
+          <div className="signup">
+            <span>Need an account? Press the Google, Facebook, or Apple buttons above, or 
+              <a href="#">sign up with email</a>
+            </span>
+          </div>
+
+          <div className="terms-of-service">
+            <span>By creating an account or continuing to use a Plex application, website, 
+              or software, you acknowledge and agree that you have accepted the 
+              <a href="#">Terms of Service</a>
+              and have reviewed the <a href="#">Privacy Policy</a>.
+            </span>
+          </div>
 
         </div>
       </div>
-
-      <form onSubmit={this.handleSubmit}>
-
-      </form>
       </>
     );
   }
-  // return(
-  // <Login.Container>
-  //   <Login.Logo src="https://www.plex.tv/wp-content/themes/plex/assets/img/plex-logo.svg"/>
-
-  //   <Login.Wrapper>
-  //     <Login.Title text="Account Sign in" />
-  //     {/* <Login.SubTitle text="" /> */}
-
-  //     <Login.Section>
-  //       <Login.Button src="#google" icon={} text="Continue with Google" color="#DE4C38" />
-  //       <Login.Button src="#facebook" icon={<FaFacebook/>} text="Continue with Facebook" color="#4267B2" />
-  //       <Login.Button src="#apple" icon={<FaApple/>} text="Continue with Apple" color="#000000" />
-  //     </Login.Section>
-
-
-  //     <Login.Splitter text="or"/>
-
-  //     <Login.Form>
-  //       <Login.InputBox>
-  // h4         <Login.SubTitle text="Email or Username"/>
-  //         <Login.Input type="text"/>
-  //       </Login.InputBox>
-  //       <Login.InputBox>
-  //         <Login.SubTitle text="Password"/>
-  //         <Login.Input type="password"/>
-  //       </Login.InputBox>
-
-  //       <Login.Submit text="Sign In" color="#E5A00B" />
-  //     </Login.Form>
-
-  //     {/* div text-wrapper */}
-  //       {/* text */}
-  //       {/* text 2 */}
-  //     {/* div text-wrapper */}
-
-  //     </Login.Wrapper>
-    
-  // </Login.Container>
-  // );
 }
