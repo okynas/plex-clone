@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FaApple, FaGoogle, FaFacebook } from 'react-icons/fa';
 
-import '../styles/login.css';
+import '../style/login.css';
 
 export default class LoginContainer extends Component {
 

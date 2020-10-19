@@ -4,6 +4,7 @@ import Home from "./pages/home"
 import Browse from "./pages/browse"
 import Login from "./pages/login"
 import Watch from "./pages/watch"
+import Movie from "./pages/movie"
 
 import "./style/app.css"
 

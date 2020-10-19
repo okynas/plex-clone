@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FaBars, FaSearch, FaTools, FaChromecast, FaUserCircle, FaHome, FaPlus, FaPlayCircle } from 'react-icons/fa';
 
-import '../styles/browse.css';
+import '../style/browse.css';
 
 import img from "../images/hero.jpg"
 
