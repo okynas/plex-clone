@@ -1,6 +1,6 @@
 import styled, {css} from "styled-components/macro"
 
-export const Container = styled.div`
+export const Container = styled.header`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -12,8 +12,23 @@ export const LeftSection = styled.div`
   flex-direction: row;
   align-items: center;
   margin: 1rem;
+  color: #fff;
 `;
-export const RightSection = styled.div``;
+export const RightSection = styled.div`
+ display: flex; 
+ flex-direction: row;
+ align-items: center;
+`;
+
+export const  RightButton = styled.button`
+font-family: "plexina-bold";
+background-color: #cc7b19;
+border: none;
+padding: 5px 12px;
+margin: 0.5rem;
+color: #fff;
+border-radius: 3px;
+`;
 
 export const Image = styled.img`
   width: 50px;
@@ -21,7 +36,11 @@ export const Image = styled.img`
   margin: 0.5rem;
 `;
 
-export const Icon = styled.a`
+export const Icon = styled.div`
+  display: flex;
+  flex-directon: row;
+  align-items: center;
+  width: auto;
   cursor: pointer;
   font-size: 1rem;
   color: #fff;
@@ -50,9 +69,30 @@ export const Search = styled.input`
 `;
 
 export const SearchWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background: #313437;
-  border-radius: 4px;
+display: flex;
+flex-direction: row;
+align-items: center;
+background: #313437;
+border-radius: 4px;
+
+@media (max-width: 860px) {
+  display: none;
+}
+`;
+
+export const RightSettings = styled.div`
+display :flex;
+flex-direction: row;
+margin: 0 1rem;
+width: auto;
+height: 30px;
+
+border-left: 1px solid #fff; 
+
+${Icon} {
+  margin: 0 0.5rem;
+  svg {
+    font-size: 1.2rem;
+  }
+}
 `;

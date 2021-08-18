@@ -1,11 +1,11 @@
 import React from 'react';
-import {BrowseContainer} from "../containers"
+import {BrowserMovies} from "../containers"
 
 export default function Browse() {
 
   return (
     <>
-      <BrowseContainer />
+      <BrowserMovies />
     </>
   );
 }
