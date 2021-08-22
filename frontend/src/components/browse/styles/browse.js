@@ -11,7 +11,6 @@ export const Content = styled.div`
 export const Aside = styled.aside`
   width: 53px;
   background: #1F1E1C;
-  height: calc(100vh - 80px);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -60,11 +59,11 @@ export const Main = styled.main`
 font-family: "plexina";
     background-color: #3F4138;
     width: 100%;
-    height: calc(100vh - 60px);
+    min-height: 91.5vh;
 `;
 
 export const Movies = styled.div`
-display: flex;
+  display: flex;
   flex-direction: row;
   margin: 10px;
   padding: 10px;
@@ -90,7 +89,6 @@ export const Movie = styled.a`
   color: #fff;
   font-size: 0.9rem;
   font-family: "plexina-bold";
-  height: 294.156px;
   width: 200px;
   text-decoration: none;
   margin: 10px;

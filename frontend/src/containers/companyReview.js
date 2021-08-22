@@ -8,7 +8,7 @@ export default function CompanyContainer () {
       <CompanyReview.Section>
 
           <CompanyReview.Text text="...One of the very few products that is rich enough in features to satisfy the media maven, but simple enough that the luddite in the house can find their way around it without frustration."/>
-          
+
           <CompanyReview.LogoWrapper>
             <CompanyReview.SectionLogo src="https://www.plex.tv/wp-content/themes/plex/assets/img/home/press-logos/engadget.svg"/>
             <CompanyReview.SectionLogo src="https://www.plex.tv/wp-content/themes/plex/assets/img/home/press-logos/forbes.svg"/>
@@ -21,7 +21,7 @@ export default function CompanyContainer () {
 
       </CompanyReview.Section>
       <CompanyReview.PremiumReview>
-        
+
         <CompanyReview.Column>
           <CompanyReview.Title title="Google Play Store" icon={<FaAndroid/>}/>
           <CompanyReview.Subtitle>Reviews</CompanyReview.Subtitle>
@@ -52,17 +52,17 @@ export default function CompanyContainer () {
         <CompanyReview.Column>
           <CompanyReview.Title title="Amazon" icon={<FaAmazon/>}/>
           <CompanyReview.Subtitle>Reviews</CompanyReview.Subtitle>
-          <CompanyReview.NumRating rating="0.0" />
+          <CompanyReview.NumRating rating="4.0" />
           <span>
-            <FaRegStar/>
-            <FaRegStar/>
-            <FaRegStar/>
-            <FaRegStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
             <FaRegStar/>
           </span>
-          <CompanyReview.Rating rating="0"/>
+          <CompanyReview.Rating rating="147.416"/>
         </CompanyReview.Column>
-        
+
         <CompanyReview.Column>
           <CompanyReview.Ticket icon={<FaTicketAlt/>}/>
           <CompanyReview.PremiumText>Go premium and get the best of Plex!</CompanyReview.PremiumText>
