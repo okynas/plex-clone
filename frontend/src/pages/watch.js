@@ -1,10 +1,11 @@
 import React from 'react';
+import {Watch} from "../containers"
 
-export default function Watch() {
+export default function WatchContainer() {
 
   return (
     <>
-      <p>watch</p>
+      <Watch/>
     </>
   );
 }

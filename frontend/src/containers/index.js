@@ -9,17 +9,19 @@ import BrowseContainer from "./browse"
 import MovieContainer from "./movie"
 import BrowserMovies from "./browseMovies"
 import BrowserMovie from "./browseMovie"
+import Watch from "./watch"
 
 export {
-  WhyPlex, 
+  WhyPlex,
   JumbotronContainer,
   CompanyContainer,
-  BlogContainer, 
-  FooterContainer, 
+  BlogContainer,
+  FooterContainer,
   HeaderContainer,
-  LoginContainer, 
-  BrowseContainer, 
+  LoginContainer,
+  BrowseContainer,
   MovieContainer,
   BrowserMovies,
-  BrowserMovie
+  BrowserMovie,
+  Watch
 }
