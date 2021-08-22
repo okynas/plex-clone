@@ -11,7 +11,7 @@ export default function BrowserMovie () {
 
       <Movie.Info>
         <Movie.InfoLeft>
-          <Movie.Image src={src} />
+          <Movie.Image src={img} />
         </Movie.InfoLeft>
         <Movie.InfoRight>
           <Movie.MovieTitle title="Black Eagle" />
@@ -34,7 +34,7 @@ export default function BrowserMovie () {
               } 
               text="" 
             />
-            <Movie.Button icon={} text="..." />
+            <Movie.Button icon={null} text="..." />
           </Movie.ButtonSection>
           <Movie.Description text="CIA agent must outrace KGB agent in searching of super weapon lost in Mediterranean." />
           <Movie.DirectedBy></Movie.DirectedBy>
