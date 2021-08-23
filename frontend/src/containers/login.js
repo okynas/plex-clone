@@ -19,12 +19,12 @@ export default class LoginContainer extends Component {
   }
 
   // componentDidMount() {
-
+  //   console.log("first")
   // }
 
   handleSubmit(event) {
-
-    localStorage.setItem('user', JSON.stringify({email: this.state.email, password: this.state.password}))
+    sessionStorage.setItem('user', JSON.stringify({email: this.state.email, password: this.state.password}))
+    // localStorage.setItem('user', JSON.stringify({email: this.state.email, password: this.state.password}))
     window.location.href('/browse')
   }
 

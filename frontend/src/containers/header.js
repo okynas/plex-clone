@@ -37,8 +37,24 @@ export default function JumbotronContainer () {
             </Header.NavBarMiddle>
 
             <Header.NavBarRight>
-              <Header.RightTitle text="My Account"/>
-              <Header.RightButton text="Launch"/>
+              {/* IF LOGGED IN */}
+              { localStorage.getItem('user') &&
+              <>
+                <Header.RightTitle text="My Account"/>
+                <Header.RightButton text="Launch"/>
+              </>
+              }
+
+              { !localStorage.getItem('user') &&
+              <>
+                <Header.RightTitle text="Sign In"/>
+                <Header.RightButton text="Sign Up"/>
+              </>
+              }
+              
+              {/* ELSE */}
+              
+              {/* END IF */}
             </Header.NavBarRight>
           </Header.NavBar>
 
