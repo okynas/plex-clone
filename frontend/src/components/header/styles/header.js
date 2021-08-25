@@ -83,6 +83,7 @@ export const NavBarMiddle = styled.div`
 `;
 export const Dropdown = styled.div`
   margin: 0 1rem;
+  position: relative;
 `;
 
 export const DropdownTitle = styled.h3`

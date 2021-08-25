@@ -22,7 +22,6 @@ export default function JumbotronContainer () {
             <Header.NavBarMiddle>
               <Header.Dropdown>
                 <Header.DropdownTitle text="Live TV" icon={<FaAngleDown/>}/>
-                {/* <Header.DropdownSub text="Live TV"/> */}
               </Header.Dropdown>
               <Header.Dropdown>
                 <Header.DropdownTitle text="On Demand" icon={<FaAngleDown/>}/>
