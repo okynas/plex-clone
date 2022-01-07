@@ -28,7 +28,7 @@ export default function BrowserMovie () {
             </Movie.Link>
             <Movie.Button
               icon={
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="plex-icon-toolbar-mark-played-560" aria-hidden="true" class="PlexIcon-plexIcon-8Tamaj ActionButton-icon-3yhx5u"><path d="M24 44.4C12.7333 44.4 3.59998 35.2666 3.59998 24C3.59998 12.7333 12.7333 3.59998 24 3.59998C35.2666 3.59998 44.4 12.7333 44.4 24C44.4 35.2666 35.2666 44.4 24 44.4ZM24 40.8C33.2784 40.8 40.8 33.2784 40.8 24C40.8 14.7216 33.2784 7.19998 24 7.19998C14.7216 7.19998 7.19998 14.7216 7.19998 24C7.19998 33.2784 14.7216 40.8 24 40.8ZM22.9177 33.9317L13.5646 28.5317L15.3646 25.414L21.6 29.014L30 14.4648L33.1177 16.2648L22.9177 33.9317Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="plex-icon-toolbar-mark-played-560" aria-hidden="true" className="PlexIcon-plexIcon-8Tamaj ActionButton-icon-3yhx5u"><path d="M24 44.4C12.7333 44.4 3.59998 35.2666 3.59998 24C3.59998 12.7333 12.7333 3.59998 24 3.59998C35.2666 3.59998 44.4 12.7333 44.4 24C44.4 35.2666 35.2666 44.4 24 44.4ZM24 40.8C33.2784 40.8 40.8 33.2784 40.8 24C40.8 14.7216 33.2784 7.19998 24 7.19998C14.7216 7.19998 7.19998 14.7216 7.19998 24C7.19998 33.2784 14.7216 40.8 24 40.8ZM22.9177 33.9317L13.5646 28.5317L15.3646 25.414L21.6 29.014L30 14.4648L33.1177 16.2648L22.9177 33.9317Z"></path></svg>
               }
               text=""
             />
@@ -42,7 +42,7 @@ export default function BrowserMovie () {
 
       <Movie.Cast>
 
-      <p>Similar Titles:</p>
+      <p>Person assosiated:</p>
         <Movie.CastWrapper>
           <Movie.Person>
             <Movie.CastImage src="https://images.plex.tv/photo?size=medium-240&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F1%2Fpeople%2F1c7cae40782be9638aee6a2a04f12926.jpg"/>

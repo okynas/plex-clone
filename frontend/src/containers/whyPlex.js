@@ -12,8 +12,8 @@ export default function WhyPlexContainer () {
           <WhyPlex.Title title="Why Plex?"/>
 
           <WhyPlex.Text>
-            Plex brings together all the media that matters to you. Your personal collection will look beautiful alongside stellar streaming content. 
-            Enjoy Live TV & DVR, a growing catalog of great web shows, news, and podcasts. It's finally possible to enjoy all the media you love in a 
+            Plex brings together all the media that matters to you. Your personal collection will look beautiful alongside stellar streaming content.
+            Enjoy Live TV & DVR, a growing catalog of great web shows, news, and podcasts. It's finally possible to enjoy all the media you love in a
             single app, on any device, no matter where you are.
           </WhyPlex.Text>
 
@@ -22,7 +22,7 @@ export default function WhyPlexContainer () {
         </WhyPlex.Wrapper>
 
         <WhyPlex.Wrapper width="58%">
-          <WhyPlex.Image src="https://www.plex.tv/wp-content/uploads/2020/07/image-homepage-devices-all-july-2020-1440x872.png"/>
+          <WhyPlex.Image src="https://www.plex.tv/wp-content/uploads/2021/12/image-avod-devices-all-may-2021-1440x872.png"/>
         </WhyPlex.Wrapper>
 
       </WhyPlex.Section>
@@ -43,7 +43,7 @@ export default function WhyPlexContainer () {
           <FaChrome style={{width: "20px", height:"20px"}}/>
           CHROME
         </WhyPlex.Icon>
-      
+
         <WhyPlex.Icon>
           <FaAmazon style={{width: "20px", height:"20px"}}/>
           AMAZON
@@ -65,7 +65,7 @@ export default function WhyPlexContainer () {
         </WhyPlex.Icon>
 
       </WhyPlex.IconWrapper>
-      
+
     </WhyPlex.Container>
   )
 }

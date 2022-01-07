@@ -25,7 +25,7 @@ export default class LoginContainer extends Component {
   handleSubmit(event) {
 
     localStorage.setItem('user', JSON.stringify({email: this.state.email, password: this.state.password}))
-    window.location.href('/browse')
+    window.location.assign('/browse')
   }
 
   handleChange(event) {
@@ -83,14 +83,14 @@ export default class LoginContainer extends Component {
           </form>
 
           <div className="signup">
-            <span>Need an account? Press the Google, Facebook, or Apple buttons above, or 
+            <span>Need an account? Press the Google, Facebook, or Apple buttons above, or
               <a href="#">sign up with email</a>
             </span>
           </div>
 
           <div className="terms-of-service">
-            <span>By creating an account or continuing to use a Plex application, website, 
-              or software, you acknowledge and agree that you have accepted the 
+            <span>By creating an account or continuing to use a Plex application, website,
+              or software, you acknowledge and agree that you have accepted the
               <a href="#">Terms of Service</a>
               and have reviewed the <a href="#">Privacy Policy</a>.
             </span>
