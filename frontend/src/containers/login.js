@@ -19,7 +19,7 @@ export default class LoginContainer extends Component {
   }
 
   // componentDidMount() {
-
+  //   console.log("first")
   // }
 
   handleSubmit(event) {

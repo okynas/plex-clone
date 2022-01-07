@@ -66,12 +66,14 @@ export const BoxContainer = styled.div`
 
 export const Date = styled.p`
   color: rgba(255,255,255,.7);
-  z-index: 2;
+  z-index: 0;
+  // z-index: 2;
 `;
 
 export const Subtitle = styled.h3`
   color: #fff;
-  z-index: 2;
+  // z-index: 2;
+  z-index: 0;
   bottom: 40px;
   font-size: 1.7rem;
   font-weight: 700;

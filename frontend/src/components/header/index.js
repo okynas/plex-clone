@@ -1,7 +1,8 @@
 import React from 'react';
 import {Container, TopSection, Overlay, NavBar, NavBarLeft, NavBarIcon, NavBarMiddle, Dropdown, 
   Menu, NavBarRight, RightButton, RightTitle, Hero, HeroText, HeroButton, DropdownTitle,
-  BottomSection, BottomBox, BottomBoxButton, BottomBoxIcon, BottomBoxTitle, BottomBoxText} from "./styles/header"
+  BottomSection, BottomBox, BottomBoxButton, BottomBoxIcon, BottomBoxTitle, BottomBoxText,
+  FullSizeNavBar,  } from "./styles/header"
 
 export default function Header({children}) {
   return(
@@ -105,4 +106,3 @@ Header.BottomBoxText = function HeaderBottomBoxText({text}) {
 Header.BottomBoxButton = function HeaderBottomBoxButton({text}) {
   return <BottomBoxButton>{text}</BottomBoxButton>;
 }
-

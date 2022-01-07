@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/header";
-import { FaAngleDown, FaBars, FaTv } from 'react-icons/fa';
+import { FaAngleDown, FaBars, FaTv, FaTicketAlt } from 'react-icons/fa';
+import { RiMovie2Line, RiFolder4Line } from "react-icons/ri"
 
 export default function JumbotronContainer () {
   return(
@@ -37,13 +38,29 @@ export default function JumbotronContainer () {
             </Header.NavBarMiddle>
 
             <Header.NavBarRight>
-              <Header.RightTitle text="My Account"/>
-              <Header.RightButton text="Launch"/>
+              {/* IF LOGGED IN */}
+              { localStorage.getItem('user') &&
+              <>
+                <Header.RightTitle text="My Account"/>
+                <Header.RightButton text="Launch"/>
+              </>
+              }
+
+              {/* ELSE */}
+
+              { !localStorage.getItem('user') &&
+              <>
+                <Header.RightTitle text="Sign In"/>
+                <Header.RightButton text="Sign Up"/>
+              </>
+              }
+              
+              {/* END IF */}
             </Header.NavBarRight>
           </Header.NavBar>
 
           <Header.Hero>
-            <Header.HeroText text="Stream Free Live TV on Plex" />
+            <Header.HeroText text="Watch Free Movie and TV on Plex" />
             <Header.HeroButton text="Tune In" />
           </Header.Hero>
 
@@ -58,24 +75,24 @@ export default function JumbotronContainer () {
         </Header.BottomBox>
         
         <Header.BottomBox>
-          <Header.BottomBoxIcon icon={<FaTv/>}/>
-          <Header.BottomBoxTitle title="Live TV"/>
-          <Header.BottomBoxText text="Stream 80+ channels free. Upgrade to the ultimate TV experience to watch and record local shows, news and sports."/>
-          <Header.BottomBoxButton text="Watch Now"/>
+          <Header.BottomBoxIcon icon={<RiMovie2Line/>}/>
+          <Header.BottomBoxTitle title="Free Movie & Shows"/>
+          <Header.BottomBoxText text="Stream over 20,000 free on-demand movies and shows from Warner Brothers, Crackle, Lionsgate, MGM and more."/>
+          <Header.BottomBoxButton text="Dive In"/>
         </Header.BottomBox>
 
         <Header.BottomBox>
-          <Header.BottomBoxIcon icon={<FaTv/>}/>
-          <Header.BottomBoxTitle title="Live TV"/>
-          <Header.BottomBoxText text="Stream 80+ channels free. Upgrade to the ultimate TV experience to watch and record local shows, news and sports."/>
-          <Header.BottomBoxButton text="Watch Now"/>
+          <Header.BottomBoxIcon icon={<RiFolder4Line/>}/>
+          <Header.BottomBoxTitle title="Your Media"/>
+          <Header.BottomBoxText text="Curate and stream your personal collection of movies, TV, music and photos anywhere on all your devices.,"/>
+          <Header.BottomBoxButton text="Take Control"/>
         </Header.BottomBox>
 
         <Header.BottomBox>
-          <Header.BottomBoxIcon icon={<FaTv/>}/>
-          <Header.BottomBoxTitle title="Live TV"/>
-          <Header.BottomBoxText text="Stream 80+ channels free. Upgrade to the ultimate TV experience to watch and record local shows, news and sports."/>
-          <Header.BottomBoxButton text="Watch Now"/>
+          <Header.BottomBoxIcon icon={<FaTicketAlt/>}/>
+          <Header.BottomBoxTitle title="Go Premium"/>
+          <Header.BottomBoxText text="Become a Plex Pass member today to support our community and experience the gold standard in entertainment."/>
+          <Header.BottomBoxButton text="Become a member"/>
         </Header.BottomBox>
         
       </Header.BottomSection>

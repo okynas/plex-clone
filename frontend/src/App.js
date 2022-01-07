@@ -13,7 +13,8 @@ const IsSignedIn = ({user, children, path}) =>  <Route path={path} render={() =>
 
 function App() {
 
-  const user = localStorage.getItem('user');
+  // const user = localStorage.getItem('user');
+  const user = sessionStorage.getItem('user');
 
   return (
     <Router>

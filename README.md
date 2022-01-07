@@ -11,7 +11,6 @@ A simple react clone of the streaming service Plex.tv. It uses React with styled
 
 Plex.tv is a homemade streaming service where you can upload your own films, movies and podcasts so taht you can digitalize movies in your shelf at home. And watch anywhere and anytiem
 
-
 ## Author
 
 👤 **Stian M**

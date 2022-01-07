@@ -27,7 +27,7 @@ export const Container = styled.div`
   }
 
   @media screen and (max-width: 1150px) {
-    height: 1420px;
+    height: 1600px;
   }
 `;
 
@@ -49,7 +49,7 @@ export const NavBar = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem;
+  // margin: 1rem;
 `;
 
 export const NavBarLeft = styled.div`
@@ -83,6 +83,7 @@ export const NavBarMiddle = styled.div`
 `;
 export const Dropdown = styled.div`
   margin: 0 1rem;
+  position: relative;
 `;
 
 export const DropdownTitle = styled.h3`
@@ -97,48 +98,48 @@ export const DropdownTitle = styled.h3`
   }
 `;
 
-// export const DropdownContainer = styled.div`
-//   display: none;
-//   position: relative;
-//   width: 200px;
-//   // height: 300px;
-//   background: rgba(33,34,37,1);
-//   // display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   border-radius: 10px;
-//   position: absolute;
-//   padding: 1.2rem;
+export const DropdownContainer = styled.div`
+  // display: none;
+  position: relative;
+  width: 200px;
+  // height: 300px;
+  background: rgba(33,34,37,1);
+  // display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: absolute;
+  padding: 1.2rem;
 
-//   &:before {
-//     background: rgba(33,34,37,1);
-//     z-index: 3;
-//     content: "";
-//     top: -25px;
-//     left: 30px;
-//     position: absolute;
-//     width: 30px;
-//     height: 30px;
-//     // clip-path: polygon(0 10%, 38% 10%, 50% 0, 62% 10%, 100% 10%, 100% 100%, 0 100%);
-//     // clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-//     clip-path: polygon(50% 50%, 0 100%, 100% 100%);
-//   }
-// `;
+  &:before {
+    background: rgba(33,34,37,1);
+    z-index: 3;
+    content: "";
+    top: -25px;
+    left: 30px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    // clip-path: polygon(0 10%, 38% 10%, 50% 0, 62% 10%, 100% 10%, 100% 100%, 0 100%);
+    // clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+  }
+`;
 
-// export const DropdownLink = styled.a`
-//   // display: none;
-//   color: #fff;
-//   text-decoration: none;
-//   text-align: center;
-//   width: 100%;
-//   // padding: .5rem;
+export const DropdownLink = styled.a`
+  // display: none;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  // padding: .5rem;
 
-//   &:hover {
-//     color: #e5a00d;
-//     cursor: pointer;
-//   }
-// `;
+  &:hover {
+    color: #e5a00d;
+    cursor: pointer;
+  }
+`;
 export const NavBarRight = styled.div`
   display: flex;
   flex-direction: row;
@@ -194,7 +195,9 @@ export const Hero = styled.div`
 export const HeroText = styled.h2`
   color: #fff;
   font-size: 3.5rem;
-  margin: 3rem 0 1.5rem 0;
+  // margin: 3rem 0 1.5rem 0;
+  // width: 800px;
+  text-align: center;
 `;
 export const HeroButton = styled.button`
   font-size: 1rem;
@@ -229,6 +232,8 @@ export const BottomSection = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin: 2rem 0 0 0;
+  height: auto;
 
   @media screen and (max-width: 1150px) {
    flex-direction: column;
@@ -238,7 +243,6 @@ export const BottomSection = styled.div`
 export const BottomBox = styled.div`
   width: 25%;
   background: rgba(40,42,45,.7);
-  margin: 1px;
   padding: 1.2rem;
   transition: all .2s ease-in-out;
 
